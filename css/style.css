@@ -333,6 +333,11 @@ ol {
 	z-index: 99;
 }
 
+.sizelogo {
+	width: 150px;
+	height: auto;
+}
+
 .logo a {
 	display: inline-block;
 }
@@ -421,22 +426,7 @@ ol {
 	transition: all 0.3s;
 }
 
-.nav-menu ul li a:after {
-	position: absolute;
-	left: 0;
-	top: 22px;
-	height: 1px;
-	width: 100%;
-	background: #e9142f;
-	content: "";
-	-webkit-transform: rotate(-20deg);
-	-ms-transform: rotate(-20deg);
-	transform: rotate(-20deg);
-	opacity: 0;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
+
 
 .top-option {
 	text-align: right;
