@@ -924,6 +924,126 @@ ol {
 	width: calc(50% - 10px);
 }
 
+/*--------------------------------------------------------------
+   About Us Section
+--------------------------------------------------------------*/
+.about-us-section.spad {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  background: #000; /* même ton que les autres sections sombres */
+}
+
+.about-us-section .about-img  {
+  width: 100%;
+  padding-top: 36px;
+  padding-right: 10px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.about-us-section .about-text h2 {
+  font-size: 36px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.about-us-section .about-text p {
+  color: #c4c4c4;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.text-color-background-about-us {
+  position: relative;
+  padding: 2rem;           /* espace intérieur pour que le contenu ne touche pas la bordure */
+  border: 1px solid #fff;  /* 1er rectangle */
+}
+
+.text-color-background-about-us::before {
+  content: "";
+  position: absolute;
+  top: -10px;              /* décale vers le haut */
+  left: -10px;             /* décale vers la gauche */
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border: 1px solid #fff;  /* 2ᵉ rectangle */
+  pointer-events: none;    /* pour que ça ne gêne pas les clics */
+}
+.about-us-section .about-list {
+  list-style: none;
+  margin-top: 30px;
+}
+.about-us-section .about-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  color: #c4c4c4;
+  font-size: 14px;
+}
+.about-us-section .about-list li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #e9142f;
+}
+
+/*--------------------------------------------------------------
+   Features Section
+--------------------------------------------------------------*/
+.features-section {
+  background: #151515;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.features-section .section-title h2 {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.features-section .feature-item {
+  background: #000;
+  border: 1px solid #363636;
+  border-radius: 4px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all .3s;
+  margin-bottom: 30px;
+}
+.features-section .feature-item i {
+  font-size: 36px;
+  color: #e9142f;
+  margin-bottom: 15px;
+}
+.features-section .feature-item h5 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.features-section .feature-item p {
+  font-size: 14px;
+  color: #c4c4c4;
+  line-height: 1.6;
+}
+.features-section .feature-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
+}
+
+/*--------------------------------------------------------------
+   Responsive tweaks
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .about-us-section .about-img,
+  .about-us-section .about-text {
+    text-align: center;
+  }
+  .features-section .feature-item {
+    padding: 20px 10px;
+  }
+}
+
+
 /*---------------------
   Team Section
 -----------------------*/
